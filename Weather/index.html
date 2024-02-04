@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- // min contebt: jitna content h utni height le lega -->
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="innerhead">
+                <input type="text" placeholder="Enter your city" class="input" id="inputbox">
+                <button id="btn" class="fa-solid fa-magnifying-glass"></button>
+            </div>
+        </div>
+
+        <div class="invalidLocation">
+            <h1>Sorry Invalid City Name </h1>
+            <img src="assets/404.png" alt="no image found">
+        </div>
+        <div class="body" id="weatherbox">
+            <img src="assets/clear.png" alt="no image found" class="image">
+
+            <div class="box">
+                <p class="temp">0<sup>°C</sup></p>
+                <p class="descrip">Clear</p>
+            </div>
+
+            <div class="parameters">
+                <div class="humidity">
+                    <!-- <i class="fa-solid fa-temperature-half"></i> -->
+                    <i class="fa-solid fa-temperature-three-quarters fa-flip"></i>
+                    <div class="text">
+                        <span id="humidity">45%</span>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+
+                <div class="wind">
+                    <!-- <i class="fa-solid fa-wind"></i> -->
+                    <i class="fa-solid fa-wind fa-flip"></i>
+                    <div class="text">
+                        <span id="windspeed">15 km/h</span>
+                        <p>Wind</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/c74db11729.js" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
